@@ -2693,6 +2693,7 @@ void Control::set_scale(const Vector2 &p_scale) {
 		data.scale.y = CMP_EPSILON;
 	update();
 	_notify_transform();
+	_change_notify("rect_scale");
 }
 Vector2 Control::get_scale() const {
 
